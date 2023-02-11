@@ -11,8 +11,13 @@
 		<title>Frontend Mentor | Advice generator app</title>
 	</head>
 	<body class="viewport">
-        <main class="card">
-            
+        <main class="viewport__card">
+            <h1 class="viewport__card__header">Advice #<span class="viewport__card__header__id"></span></h1>
+            <p class="viewport__card__advice"></p>
+            <img src="./images/pattern-divider-mobile.svg" alt="" class="viewport__card__divider">
+            <div class="viewport__card__button-div">
+                <img src="./images/icon-dice.svg" alt="" class="viewport__card__button" onclick="getAdvice()">
+            </div>
         </main>
 		<div class="attribution">
             Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" >Frontend Mentor</a>. Coded by Danny Cho.

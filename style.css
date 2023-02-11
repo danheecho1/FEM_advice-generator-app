@@ -14,3 +14,36 @@
 	font-size: 28px;
 }
 
+.viewport {
+	background-color: var(--clr-dark-blue);
+}
+
+.viewport__card {
+	margin: 2em auto;
+	padding: 2em 1em 0;
+	width: 350px;
+	background-color: var(--clr-dark-grayish-blue);
+	border-radius: 15px;
+	text-align: center;
+}
+
+.viewport__card__header {
+	color: var(--clr-green);
+}
+
+.viewport__card__advice {
+	color: var(--clr-cyan);
+}
+
+.viewport__card__button-div {
+	position: relative;
+	transform: translate(0, 50%);
+	background-color: var(--clr-green);
+	border-radius: 50%;
+	height: 70px;
+	width: 70px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+}
