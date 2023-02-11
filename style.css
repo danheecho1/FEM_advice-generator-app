@@ -12,6 +12,7 @@
 	box-sizing: border-box;
 	font-family: 'Manrope', sans-serif;
 	font-size: 28px;
+	-webkit-user-drag: none;
 }
 
 .viewport {
@@ -19,7 +20,7 @@
 }
 
 .viewport__card {
-	margin: 2em auto;
+	margin: 2em auto 2.5em;
 	padding: 2em 1em 0;
 	width: 350px;
 	background-color: var(--clr-dark-grayish-blue);
@@ -27,12 +28,21 @@
 	text-align: center;
 }
 
-.viewport__card__header {
+.viewport__card__header, 
+.viewport__card__header span {
 	color: var(--clr-green);
+	font-size: 0.5rem;
+	letter-spacing: 0.2rem;
 }
 
 .viewport__card__advice {
 	color: var(--clr-cyan);
+	margin-top: 1.5em;
+	margin-bottom: 0.5em;
+}
+
+.viewport__card__divider--desktop {
+	display: none;
 }
 
 .viewport__card__button-div {
@@ -46,4 +56,31 @@
 	justify-content: center;
 	align-items: center;
 	margin: auto;
+	cursor: pointer;
+}
+
+@media screen and (min-width: 700px) {
+	.viewport__card {
+		width: 550px;
+		padding: 2em 1.5em 0;
+	}
+
+	.viewport__card__advice {
+		margin-bottom: 1em;
+	}
+
+	.viewport__card__divider--desktop {
+		display: inline;
+	}
+
+	.viewport__card__divider--mobile {
+		display: none;
+	}
+}
+
+.attribution, 
+.attribution a {
+	font-size: 0.5rem;
+	text-align: center;
+	color: var(--clr-cyan);
 }
