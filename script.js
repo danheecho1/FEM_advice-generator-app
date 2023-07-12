@@ -1,6 +1,6 @@
 const number = document.querySelector(".viewport__card__header__id");
 const quote = document.querySelector(".viewport__card__advice");
-const button = document.querySelector(".viewport__card__button");
+const button = document.querySelector(".viewport__card__button-div");
 
 function getAdvice() {
 	fetch("https://api.adviceslip.com/advice", {cache: "no-cache"})
